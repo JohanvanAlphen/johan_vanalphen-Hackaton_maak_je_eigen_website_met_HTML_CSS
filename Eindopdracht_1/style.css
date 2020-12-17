@@ -1,0 +1,156 @@
+body {
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(248, 235, 160);
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns: 10px fr 10px ;
+    grid-template-rows: 11fr 100px 1fr 1fr 50px;
+    gap: 2px;
+    grid-template-areas:
+    ". header ."
+    ". nav ."
+    ". main ."
+    ". aside ."
+    ". footer ."
+    ;
+    height: 1000px;
+}
+
+header {
+
+    font-size: 30px;
+    color: white;
+    background-color: rgb(76, 76, 250);
+    padding-bottom: 20px;
+    grid-area: header;
+    
+
+}
+
+
+menu {
+
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+nav {
+
+    background-color: cornsilk;
+    grid-area: nav;
+}
+
+main {
+
+    background-color: darkgray;
+    color: rgb(5, 5, 78);
+    grid-area: main;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+aside {
+
+    background-color: gold;
+    grid-area: aside;
+    padding-top: 50px;
+  
+}
+
+footer {
+
+    background-color: rgb(161, 213, 248);
+    grid-area: footer;
+}
+
+
+
+li {
+
+    padding-left: 5px;
+    padding-bottom: 10px;
+    list-style-image: url(../Eindopdracht_1/Images/HappyCat\ 25px.png)
+   
+}
+
+
+
+a {
+    
+  
+    text-align: left;
+    text-decoration: none;
+   
+  }
+
+  a:hover {
+    color: red;
+ 
+  }
+
+ 
+
+  button {
+
+    text-align: center;
+    color: white;
+    background-color: black;
+
+}
+
+button:hover {
+
+    color: black;
+    background-color: white;
+  }
+
+.menubottom {
+
+   text-align: center;
+}
+
+.blauw {
+
+    color:brown;
+    font-style: italic;
+    font-weight: bold;
+    font-size: larger;
+    
+    }
+
+    table, td {
+        
+        padding: 10px;
+        ;
+
+      }
+
+      table {
+        border-collapse: collapse;
+        background-color: lightsteelblue;
+        border-radius: 25px;
+      
+      }
+
+@media (min-width: 768px) {
+      
+.container {
+
+    grid-template-columns: 30px 300px 1fr 30px ;
+    grid-template-rows: 1fr 50px 1fr 50px;
+    gap: 5px;
+    grid-template-areas:
+    ". header header ."
+    ". nav nav ."
+    ". aside main ."
+    ". footer footer ."
+;
+}
+}
